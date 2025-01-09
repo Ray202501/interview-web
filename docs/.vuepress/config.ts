@@ -10,12 +10,18 @@ export default defineUserConfig({
   theme: defaultTheme({
     sidebar: [
       {
+        text: '面试技巧',
+        prefix: 'guide/',
+        children: ['resume', 'hr']
+      },
+      {
         text: 'HTML5系列',
         link: 'html5/feature',
       },
       {
         text: 'JavaScript系列',
-        link: 'JavaScript/prototype',
+        prefix: 'JavaScript/',
+        children: ['data_type', 'prototype', 'scope','bind_call_apply','closure', 'event_agent','event_loop','event_Model']
       },
       {
         text: 'Vue3',

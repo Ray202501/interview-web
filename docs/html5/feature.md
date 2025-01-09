@@ -52,31 +52,33 @@ HTML5 是 HTML 的第五个版本，相较于之前的版本，它引入了许�
 
 Web Components 是一套由浏览器原生支持的WebAPI，允许开发者✅创建可重用、✅封装良好的自定义HTML元素。它由以下三个主要技术组成：
 
- - 1、Custom Elements（自定义元素）
+- 1、Custom Elements（自定义元素）
 
 允许开发者定义自己的 HTML 标签及其行为。例如，可以创建一个 `<hello-world>` 元素，该元素在页面中显示 "Hello, World!"。
 
- - 2、Shadow DOM（影子 DOM）
+- 2、Shadow DOM（影子 DOM）
 
 用于将封装的"影子"DOM树附加到元素(例如：不想看到`<user-card>`的内部代码, Web Component 允许内部代码隐藏起来，这叫做 Shadow DOM，即这部分 DOM 默认与外部 DOM 隔离，内部任何代码都无法影响外部。)，与主文档 DOM 分开呈现。这样可以保持元素的功能私有，<b>避免样式和脚本冲突</b>。
 
- - 3、HTML Templates（HTML 模板）
+- 3、HTML Templates（HTML 模板）
 
 `<template>` 和 `<slot>` 元素使你可以编写不在呈现页面中显示的标记模板，然后它们<strong>可以作为自定义元素结构的基础被多次重用。</strong>
 
 ### 特性
-  - 封装性：Shadow DOM 封装组件内部丝线细节，避免和其他组件或者全局组件样式冲突。
-  - 模块化：可以将复杂的页面分解为多个独立的组件，每个组件都是独立的模块。
-  - 可重用性：自定义组件，可以在不同环境和场景中重复使用。
-  - 跨框架兼容性
+
+- 封装性：Shadow DOM 封装组件内部丝线细节，避免和其他组件或者全局组件样式冲突。
+- 模块化：可以将复杂的页面分解为多个独立的组件，每个组件都是独立的模块。
+- 可重用性：自定义组件，可以在不同环境和场景中重复使用。
+- 跨框架兼容性
 
 ### 缺点
-  - 兼容问题：老旧浏览器并不支持，如IE
-  - 性能问题：在移动设备上有可能会对页面性能产生影响
+
+- 兼容问题：老旧浏览器并不支持，如IE
+- 性能问题：在移动设备上有可能会对页面性能产生影响
 
 ### 示例
-::: code-tabs
 
+::: code-tabs
 @tab HTML5
 
 ```html5
@@ -155,8 +157,8 @@ class MyCounter extends HTMLElement {
 customElements.define('my-counter', MyCounter);
 
 ```
-:::
 
+:::
 
 ## 三、:tada: Canvas 和 SVG 有什么区别
 

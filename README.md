@@ -1,5 +1,12 @@
 # 前端知识点
 
+## 面试技巧
+
+回答技巧
+
+- 自我介绍
+- HR面试关注点
+
 ## HTML5
 
 Canvas 和 SVG 区别
@@ -10,11 +17,11 @@ Web Component
 基本数据类型：Number String Boolean Null Undefined Symbol（ES6）
 作用域和作用域链
 原型和原型链
+继承方式
 闭包
 深拷贝与浅拷贝
 this指向
 call、apply与bind区别
-继承方式
 事件循环的理解
 防抖和节流
 如何判断一个元素是否在可视区域中
@@ -41,6 +48,9 @@ EventLoop事件循环机制的理解
 EventEmitter的理解，如何实现一个EventEmitter
 EventBus 的理解，如何实现一个EventBus，使用场景？
 Nodejs的理解，应用场景？优缺点？
+Node异步编程
+Node 多线程/进程并发
+Node I/O通信
 Node性能如何进行监控以及优化？
 
 ## Typescript
@@ -106,12 +116,19 @@ nginx 负载均衡
 ## 软件工程
 
 CI/CD
+前端深度优化
 前端监控
 前端架构思考
 前端技术选型
 微前端
 docker容器化
 k8s
+
+## 多媒体
+
+WebVR、WebXR、WebGL、WebAudio、WebRTC
+Three.js
+WebAssembly
 
 ## 大数据
 

@@ -1,5 +1,4 @@
-<template><div><h1 id="面试官-javascript原型-原型链-有什么特点" tabindex="-1"><a class="header-anchor" href="#面试官-javascript原型-原型链-有什么特点"><span>面试官：JavaScript原型，原型链 ? 有什么特点？</span></a></h1>
-<p><img src="https://static.vue-js.com/4500e170-725e-11eb-85f6-6fac77c0c9b3.png" alt=""></p>
+<template><div><h1 id="问题-javascript原型-原型链-有什么特点" tabindex="-1"><a class="header-anchor" href="#问题-javascript原型-原型链-有什么特点"><span>问题：JavaScript原型，原型链 ? 有什么特点？</span></a></h1>
 <h2 id="一、原型" tabindex="-1"><a class="header-anchor" href="#一、原型"><span>一、原型</span></a></h2>
 <p><code v-pre>JavaScript</code> 常被描述为一种基于原型的语言——每个对象拥有一个原型对象</p>
 <p>当试图访问一个对象的属性时，它不仅仅在该对象上搜寻，还会搜寻该对象的原型，以及该对象的原型的原型，依次层层向上搜索，直到找到一个名字匹配的属性或到达原型链的末尾</p>
@@ -24,8 +23,7 @@
 <span class="line"><span class="token punctuation">}</span></span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面这个对象，就是大家常说的原型对象</p>
-<p>可以看到，原型对象有一个自有属性<code v-pre>constructor</code>，这个属性指向该函数，如下图关系展示</p>
-<p><img src="https://static.vue-js.com/56d87250-725e-11eb-ab90-d9ae814b240d.png" alt=""></p>
+<p>可以看到，原型对象有一个自有属性<code v-pre>constructor</code>，这个属性指向该函数;</p>
 <h2 id="二、原型链" tabindex="-1"><a class="header-anchor" href="#二、原型链"><span>二、原型链</span></a></h2>
 <p>原型对象也可能拥有原型，并从中继承方法和属性，一层一层、以此类推。这种关系常被称为原型链 (prototype chain)，它解释了为何一个对象会拥有定义在其他对象中的属性和方法</p>
 <p>在对象实例和它的构造器之间建立一个链接（它是<code v-pre>__proto__</code>属性，是从构造函数的<code v-pre>prototype</code>属性派生的），之后通过上溯原型链，在构造器中找到这些属性和方法</p>
@@ -40,9 +38,7 @@
 <span class="line"><span class="token comment">// 第二步 创建实例</span></span>
 <span class="line"><span class="token keyword">var</span> person <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">'person'</span><span class="token punctuation">)</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>根据代码，我们可以得到下图</p>
-<p><img src="https://static.vue-js.com/60825aa0-725e-11eb-85f6-6fac77c0c9b3.png" alt=""></p>
-<p>下面分析一下：</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>下面分析一下：</p>
 <ul>
 <li>
 <p>构造函数<code v-pre>Person</code>存在原型对象<code v-pre>Person.prototype</code></p>
@@ -62,8 +58,7 @@
 </ul>
 <h2 id="三、总结" tabindex="-1"><a class="header-anchor" href="#三、总结"><span>三、总结</span></a></h2>
 <p>下面首先要看几个概念：</p>
-<p><code v-pre>__proto__</code>作为不同对象之间的桥梁，用来指向创建它的构造函数的原型对象的</p>
-<p><img src="https://static.vue-js.com/6a742160-725e-11eb-ab90-d9ae814b240d.png" alt=""></p>
+<p><code v-pre>__proto__</code>作为不同对象之间的桥梁，用来指向创建它的构造函数的原型对象</p>
 <p>每个对象的<code v-pre>__proto__</code>都是指向它的构造函数的原型对象<code v-pre>prototype</code>的</p>
 <div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre v-pre><code><span class="line">person1<span class="token punctuation">.</span>__proto__ <span class="token operator">===</span> <span class="token class-name">Person</span><span class="token punctuation">.</span>prototype</span>
 <span class="line"></span></code></pre>
