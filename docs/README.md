@@ -2,25 +2,38 @@
 home: true
 title: Home
 
-features:
-  - title: JavaScript
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: NodeJS
-    details: Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site.
-  - title: 算法
-    details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
-  - title: Vue3
-    details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
-  - title: React
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-  - title: Typescript
-    details: Providing a default theme out of the box. You can also choose a community theme or create your own one.
-  - title: Webpack & Vite
-    details: Providing a default theme out of the box. You can also choose a community theme or create your own one.
-  - title: CI/CD
-    details: Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site.
-  - title: Electron & ReactNative
-    details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
+
+actions:
+  - text: HTML5
+    link: /html5/feature.html
+    type: secondary
+  - text: JavaScript
+    link: /JavaScript/prototype.html
+    type: secondary
+  - text: NodeJS
+    link: /getting-started.html
+    type: secondary
+  - text: 算法
+    link: /guide/getting-started.html
+    type: secondary
+  - text: Vue3
+    link: /algorithm/Algorithm.html
+    type: secondary
+  - text: React
+    link: /guide/getting-started.html
+    type: secondary
+  - text: Typescript
+    link: /guide/getting-started.html
+    type: secondary
+  - text: Webpack & Vite
+    link: /guide/getting-started.html
+    type: secondary
+  - text: CI/CD
+    link: /guide/getting-started.html
+    type: secondary
+  - text: Electron & ReactNative
+    link: /guide/getting-started.html
+    type: secondary
 
 footer: MIT Licensed | Copyright © 2018-present VuePress Community
 ---

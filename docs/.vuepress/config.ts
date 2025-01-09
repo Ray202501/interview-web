@@ -8,9 +8,13 @@ export default defineUserConfig({
   title: '前端面试题总结',
   description: '梳理前端知识结构',
   theme: defaultTheme({
-    navbar: [
+    sidebar: [
       {
-        text: 'JavaScript',
+        text: 'HTML5系列',
+        link: 'html5/feature',
+      },
+      {
+        text: 'JavaScript系列',
         link: 'JavaScript/prototype',
       },
       {
